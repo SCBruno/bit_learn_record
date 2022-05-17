@@ -1,0 +1,3 @@
+﻿  test.c
+C:\比特学习文件夹\SeqList _05_05\SeqList _05_05\SeqList.h(1,1): warning C4828: 文件包含在偏移 0x27f 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+  SeqList _05_05.vcxproj -> C:\比特学习文件夹\SeqList _05_05\x64\Debug\SeqList _05_05.exe
