@@ -2,14 +2,14 @@
 #include"Queue.h"
 
 
-//³õÊ¼»¯
+//åˆå§‹åŒ–
 void QueueInit(Queue* q)
 {
 	q->head = q->tail = NULL;
 }
 
 
-//Èë¶Ó
+//å…¥é˜Ÿ
 void QueuePush(Queue* q,QUDataType x)
 {
 	assert(q);
@@ -22,6 +22,7 @@ void QueuePush(Queue* q,QUDataType x)
 	else
 	{
 		newnode->data = x;
+		newnode->next = NULL;
 		if (q->head == NULL)
 		{
 			q->head = q->tail = newnode;
@@ -36,7 +37,7 @@ void QueuePush(Queue* q,QUDataType x)
 }
 
 
-//³ö¶Ó
+//å‡ºé˜Ÿ
 void QueuePop(Queue* q)
 {
 	assert(q);
@@ -55,14 +56,14 @@ void QueuePop(Queue* q)
 }
 
 
-//ÅÐ¿Õ
+//åˆ¤ç©º
 bool QueueEmpty(Queue* q)
 {
 	assert(q);
 	return q->tail == NULL;
 }
 
-//Í·ÔªËØ
+//å¤´å…ƒç´ 
 QUDataType QueueFront(Queue* q)
 {
 	assert(q);
@@ -71,7 +72,7 @@ QUDataType QueueFront(Queue* q)
 	return q->head->data;
 }
 
-//¶ÓÁÐÔªËØ¸öÊý
+//é˜Ÿåˆ—å…ƒç´ ä¸ªæ•°
 int QueueSize(Queue* q)
 {
 	assert(q);
@@ -85,7 +86,7 @@ int QueueSize(Queue* q)
 	return size;
 }
 
-//ÊÍ·ÅÁ´±í
+//é‡Šæ”¾é“¾è¡¨
 void QueueDestory(Queue* q)
 {
 	assert(q);
