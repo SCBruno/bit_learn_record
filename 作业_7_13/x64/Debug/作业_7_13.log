@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\C语言_csdn\作业_7_13\作业_7_13\test.cpp(151,35): warning C4244: “参数”: 从“__int64”转换到“double”，可能丢失数据
+D:\C语言_csdn\作业_7_13\作业_7_13\test.cpp(167,9): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+  作业_7_13.vcxproj -> D:\C语言_csdn\作业_7_13\x64\Debug\作业_7_13.exe
